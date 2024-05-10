@@ -60,3 +60,23 @@ This script is used to create dataset objects that can be directly used with PyT
 
 ---
 
+
+## utilities.py
+
+**Description**: This Python script encapsulates a suite of utility functions designed to support machine learning models in evaluating performance and managing training dynamics. It includes functionality for adjusting model trainability, calculating various performance metrics, estimating completion time for training tasks, and dynamically handling directory paths based on the operating system.
+
+**Key Features**:
+- **Dynamic Directory Management**: Automatically adjusts directory paths for data and models based on the operating system, ensuring compatibility across Windows, macOS, and Unix-like systems.
+- **Model Trainability Adjustment**: Provides a function to selectively freeze or unfreeze layers of a neural network, facilitating fine-tuning and transfer learning processes.
+- **Performance Metrics Calculation**: Offers comprehensive functions to calculate specificity, sensitivity, F1 score, AUC, and produce confusion matrices for classification tasks. It also supports generating ROC curves and plotting them if a path is provided.
+- **Time Management Utilities**: Includes functions to estimate the remaining time for tasks (ETA) and convert seconds to a more readable format (hh:mm:ss), aiding in monitoring and managing long-running training processes.
+
+**Functionality**:
+- The `adjust_model_trainability` function enables precise control over which layers of a model are trainable, aiding in effective fine-tuning.
+- `calculate_metrics` and `calculate_metrics2` provide detailed performance analysis for classification outcomes, which is crucial for evaluating and improving model accuracy.
+- Time-related utilities like `hh_mm_ss` and `calculate_eta` help track and predict training durations, improving usability during model development and training sessions.
+
+**Usage**:
+This script is intended to be used as a helper module in machine learning projects where managing model training phases, evaluating model performance, and ensuring cross-platform compatibility are required. It simplifies routine tasks and enhances the maintainability of the codebase by centralizing common operations.
+
+---
