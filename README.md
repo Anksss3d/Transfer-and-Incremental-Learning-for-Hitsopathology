@@ -80,3 +80,23 @@ This script is used to create dataset objects that can be directly used with PyT
 This script is intended to be used as a helper module in machine learning projects where managing model training phases, evaluating model performance, and ensuring cross-platform compatibility are required. It simplifies routine tasks and enhances the maintainability of the codebase by centralizing common operations.
 
 ---
+
+## train_model.py
+
+**Description**: This Python script is the main driver for training machine learning models, specifically focusing on EfficientNet architectures. It integrates several custom utilities and dataset handling functionalities to streamline the training and validation processes for image classification tasks.
+
+**Key Features**:
+- **Model Training and Validation**: Implements a comprehensive training loop that includes forward passes, loss calculation, backpropagation, and parameter updates. It also handles validation using a separate dataset to monitor model performance and generalize ability.
+- **Metrics Tracking and Display**: Utilizes a custom method to print detailed training metrics including loss, epoch progress, and estimated time of arrival (ETA) for remaining training.
+- **Dynamic Model Adjustments**: Employs functions from `utilities.py` to adjust model trainability by selectively unfreezing model layers, which is critical for fine-tuning pre-trained models.
+- **Performance Evaluation**: After each training epoch, the script evaluates the model on the validation set, calculating standard classification metrics and a confusion matrix to assess model accuracy and other performance metrics.
+
+**Functionality**:
+- The `get_datasets` function initializes training and validation datasets using configurations specified in a dictionary, facilitating easy switches between different sets of data.
+- `run_epoch` manages the operations within a single epoch, alternating between training and validation phases, and invokes metric calculation and logging.
+- The `train` function sets up the model, datasets, loss function, and optimizer based on provided configurations. It iterates over a specified number of epochs, saving the model after each epoch and logging detailed performance data.
+
+**Usage**:
+This script is typically executed to train a new model from scratch or continue training from a pre-trained state. It requires a configuration dictionary that specifies paths, hyperparameters, and model details. This script is critical for automating the training process, allowing for extensive experimentation and iterative improvements in model performance.
+
+---
