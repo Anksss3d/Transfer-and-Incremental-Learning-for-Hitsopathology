@@ -27,3 +27,6 @@ This project addresses the critical challenge in medical diagnostics of utilizin
 ## Model Details
 The **EfficientNet B0** architecture was adapted for this project. This model was initially trained on 50% of the dataset to establish a baseline for performance. Subsequent training phases incorporated incremental learning, focusing on the retraining of the top three layers of the architecture, which allowed the model to assimilate new data while preserving previously learned knowledge.
 
+https://github.com/Anksss3d/Transfer-and-Incremental-Learning-for-Hitsopathology/blob/main/Project%20Report.pdf
+
+[Link to Project Report](https://github.com/username/repository/blob/main/Project%20Report.pdf)
