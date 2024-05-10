@@ -100,3 +100,23 @@ This script is intended to be used as a helper module in machine learning projec
 This script is typically executed to train a new model from scratch or continue training from a pre-trained state. It requires a configuration dictionary that specifies paths, hyperparameters, and model details. This script is critical for automating the training process, allowing for extensive experimentation and iterative improvements in model performance.
 
 ---
+
+## train_mlp_xgb.py
+
+**Description**: This Python script focuses on training classifiers using two distinct machine learning models: the Multilayer Perceptron (MLP) and the XGBoost classifier. It integrates data handling, preprocessing, model training, and evaluation, providing a comprehensive toolkit for applying these models to specific datasets.
+
+**Key Features**:
+- **Dual Model Training**: Supports training using both MLP and XGBoost, allowing for comparative analysis of model performance across various metrics.
+- **Configurable Training Options**: Offers flexibility in model training through parameters that dictate the complexity of the MLP model, the training epochs, and the option to incrementally train the MLP.
+- **Performance Evaluation**: Utilizes custom utilities to calculate detailed metrics such as accuracy, log loss, and potentially ROC curves if specified.
+- **Scalable to Multiple Datasets**: Includes functionality to train models across multiple datasets and save detailed training and validation results, enabling broad experimental studies.
+
+**Functionality**:
+- `fit_mlp_classifier` and `fit_xgb_classifier` are the core functions that handle the fitting of the MLP and XGBoost models to the training data, respectively. They manage everything from fitting the model to evaluating it on test data and optionally plotting ROC curves.
+- `train` orchestrates the model training process by preparing data, applying preprocessing steps like scaling, and invoking the fitting functions based on the specified classifier type.
+- The script also includes a method to train multiple datasets and classifier configurations systematically, logging the results for comprehensive analysis.
+
+**Usage**:
+This script is intended for scenarios where a robust comparison between different types of classifiers is required under varying configurations. It is particularly useful in academic and research settings where experimental rigor and detailed performance logging are crucial.
+
+---
