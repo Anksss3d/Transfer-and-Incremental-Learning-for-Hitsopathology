@@ -33,4 +33,5 @@ The **EfficientNet B0** architecture was adapted for this project. This model wa
 
 We achieved favorable outcomes from the feature extractor training and the incremental analysis. These results show a clear improvement in model performance, validating the effectiveness of the applied machine-learning techniques.
 
-For a detailed exploration of the results, including comprehensive comparisons and statistical validations, please refer to the project report [Link to Project Report]([https://github.com/username/repository/blob/main/Project%20Report.pdf](https://github.com/Anksss3d/Transfer-and-Incremental-Learning-for-Hitsopathology/blob/main/Project%20Report.pdf)) .
+Please refer to the project report for a detailed exploration of the results, including comprehensive comparisons and statistical validations.
+[Link to Project Report]([https://github.com/username/repository/blob/main/Project%20Report.pdf](https://github.com/Anksss3d/Transfer-and-Incremental-Learning-for-Hitsopathology/blob/main/Project%20Report.pdf)) .
