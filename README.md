@@ -1,7 +1,6 @@
 # Evolving Diagnostics: Incremental and Transfer Learning in Histopathology Image Analysis for Cancer Detection
-<p align="center">
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/PSgRpoYvgJw/0.jpg)](https://www.youtube.com/watch?v=PSgRpoYvgJw)
-</p>
+
 ## Introduction
 This project addresses the critical challenge in medical diagnostics of utilizing histopathology images for accurate cancer detection. By leveraging advanced machine learning techniques, specifically transfer and incremental learning, the project aims to enhance the precision, efficiency, and adaptability of diagnostic tools, transforming how histopathology images are interpreted and used in clinical settings.
 
